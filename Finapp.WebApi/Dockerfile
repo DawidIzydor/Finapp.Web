@@ -1,0 +1,25 @@
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+WORKDIR /src
+COPY ["Finapp.WebApi/Finapp.WebApi.csproj", "Finapp.WebApi/"]
+COPY ["FinapDb/Finapp.Database.csproj", "FinapDb/"]
+COPY ["FinapModels/Finapp.Dto.csproj", "FinapModels/"]
+COPY ["Finapp.Authentication/Finapp.Authentication.csproj", "Finapp.Authentication/"]
+RUN dotnet restore "Finapp.WebApi/Finapp.WebApi.csproj"
+COPY . .
+WORKDIR "/src/Finapp.WebApi"
+RUN dotnet build "Finapp.WebApi.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "Finapp.WebApi.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "Finapp.WebApi.dll"]

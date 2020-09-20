@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Finapp.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Finapp.WebApi.AuthorizeAttribute">
+            <inheritdoc cref="T:Microsoft.AspNetCore.Mvc.Filters.IAuthorizationFilter" />
+        </member>
+        <member name="M:Finapp.WebApi.AuthorizeAttribute.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Finapp.WebApi.Controllers.AuthenticateController">
+            <summary>
+                Controller used for authentication
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.AuthenticateController.#ctor(Finapp.Authentication.IUserService)">
+            <inheritdoc />
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.AuthenticateController.Authenticate(Finapp.Dto.Authentication.AuthenticationRequestDto)">
+            <summary>
+                Authenticates user
+            </summary>
+            <param name="userLoginInformation">User login information</param>
+            <returns>Authentication token</returns>
+        </member>
+        <member name="T:Finapp.WebApi.Controllers.FinancialStatusController">
+            <summary>
+                Controller for financial statuses
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.#ctor(Finapp.Database.FinappDbContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.GetFinancialSourceEntries">
+            <summary>
+                Gets user financial source entries
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.GetFinancialSourceEntry(System.Guid)">
+            <summary>
+                Gets a financial status entry
+            </summary>
+            <param name="id">Id of financial status</param>
+            <returns></returns>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.PutFinancialSourceEntry(System.Guid,Finapp.Dto.FinancialStatusDto)">
+            <summary>
+                Modifies financial status
+            </summary>
+            <param name="id"></param>
+            <param name="financialStatus"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.PostFinancialSourceEntry(Finapp.Dto.FinancialStatusDto)">
+            <summary>
+                Inserts a new financial status
+            </summary>
+            <param name="financialStatusDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Finapp.WebApi.Controllers.FinancialStatusController.DeleteFinancialSourceEntry(System.Guid)">
+            <summary>
+                Deletes a financial status
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Finapp.WebApi.JwtMiddleware">
+            <summary>
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.JwtMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{Finapp.Authentication.Models.AppSettings})">
+            <summary>
+            </summary>
+            <param name="next"></param>
+            <param name="appSettings"></param>
+        </member>
+        <member name="M:Finapp.WebApi.JwtMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,Finapp.Authentication.IUserService)">
+            <summary>
+            </summary>
+            <param name="context"></param>
+            <param name="userService"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Finapp.WebApi.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:Finapp.WebApi.Startup">
+            <summary>
+                Startup
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+                Startup
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:Finapp.WebApi.Startup.Configuration">
+            <summary>
+                Configuration
+            </summary>
+        </member>
+        <member name="M:Finapp.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Finapp.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+                This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

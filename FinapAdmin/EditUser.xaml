@@ -1,0 +1,19 @@
+﻿<Window x:Class="Finapp.Admin.EditUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="AddUser" Height="158" Width="300"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}">
+    <Grid>
+        <StackPanel Margin="1,1,1,1">
+            <Label Content="User name"/>
+            <TextBox x:Name="UserNameTextBox" TextWrapping="Wrap" Width="Auto" HorizontalAlignment="Stretch" Text="{Binding Path=User.Name}" TextChanged="UserNameTextBox_TextChanged" IsReadOnly="True"/>
+            <Label Content="Password"/>
+            <PasswordBox x:Name="PasswordBox" Width="Auto"></PasswordBox>
+            <Button x:Name="EditUserButton" Content="Edit user" Margin="0,2,0,2" Click="EditUserButton_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>

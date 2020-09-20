@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  finapp.webapi:
+    image: ${DOCKER_REGISTRY-}finappwebapi
+    build:
+      context: .
+      dockerfile: Finapp.WebApi/Dockerfile

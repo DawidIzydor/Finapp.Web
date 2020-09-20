@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.Admin", "FinapAdmin\Finapp.Admin.csproj", "{0D5EEAEC-3C83-46B5-918A-EA21420DC80D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.Dto", "FinapModels\Finapp.Dto.csproj", "{114812F8-4025-4602-865C-A467FADB8592}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.Database", "FinapDb\Finapp.Database.csproj", "{B54D37F7-361C-4C9F-8605-4E658ABE68DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.Database.Migrations", "Finapp.Database.Migrations\Finapp.Database.Migrations.csproj", "{3A611076-28C2-4D76-9241-7BFC9B4CDA23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.WebApi", "Finapp.WebApi\Finapp.WebApi.csproj", "{BA119C40-4140-42D9-8390-099FA7029A4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finapp.Authentication", "Finapp.Authentication\Finapp.Authentication.csproj", "{F4C58C5C-248F-44EF-ACD9-1042DBCD6FC5}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "Finapp.WebApi.docker-compose", "Finapp.WebApi.docker-compose.dcproj", "{A59CEEAB-6AE5-439B-9136-74F03CFF63BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D5EEAEC-3C83-46B5-918A-EA21420DC80D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D5EEAEC-3C83-46B5-918A-EA21420DC80D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D5EEAEC-3C83-46B5-918A-EA21420DC80D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D5EEAEC-3C83-46B5-918A-EA21420DC80D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{114812F8-4025-4602-865C-A467FADB8592}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114812F8-4025-4602-865C-A467FADB8592}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114812F8-4025-4602-865C-A467FADB8592}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114812F8-4025-4602-865C-A467FADB8592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54D37F7-361C-4C9F-8605-4E658ABE68DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54D37F7-361C-4C9F-8605-4E658ABE68DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54D37F7-361C-4C9F-8605-4E658ABE68DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54D37F7-361C-4C9F-8605-4E658ABE68DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A611076-28C2-4D76-9241-7BFC9B4CDA23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A611076-28C2-4D76-9241-7BFC9B4CDA23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A611076-28C2-4D76-9241-7BFC9B4CDA23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A611076-28C2-4D76-9241-7BFC9B4CDA23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA119C40-4140-42D9-8390-099FA7029A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA119C40-4140-42D9-8390-099FA7029A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA119C40-4140-42D9-8390-099FA7029A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA119C40-4140-42D9-8390-099FA7029A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C58C5C-248F-44EF-ACD9-1042DBCD6FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C58C5C-248F-44EF-ACD9-1042DBCD6FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C58C5C-248F-44EF-ACD9-1042DBCD6FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C58C5C-248F-44EF-ACD9-1042DBCD6FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A59CEEAB-6AE5-439B-9136-74F03CFF63BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A59CEEAB-6AE5-439B-9136-74F03CFF63BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A59CEEAB-6AE5-439B-9136-74F03CFF63BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A59CEEAB-6AE5-439B-9136-74F03CFF63BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5818756-EFA7-4745-9832-15E85220439B}
+	EndGlobalSection
+EndGlobal
