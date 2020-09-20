@@ -15,6 +15,11 @@ A showdown service-based application for managing finances. This is the service 
 
 To use get the `Finapp.Client` application. It's in another repo
 
+# ToDo
+1. Dockerize
+2. Make dockerhub get this to work
+3. Expand functionality
+
 # License
 
 MIT I guess
