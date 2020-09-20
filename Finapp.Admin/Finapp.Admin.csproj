@@ -16,9 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FinapDb\Finapp.Database.csproj" />
-    <ProjectReference Include="..\FinapModels\Finapp.Dto.csproj" />
     <ProjectReference Include="..\Finapp.Authentication\Finapp.Authentication.csproj" />
+    <ProjectReference Include="..\Finapp.Database\Finapp.Database.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FinapModels\Finapp.Dto.csproj" />
+    <ProjectReference Include="..\Finapp.Dto\Finapp.Dto.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FinapDb\Finapp.Database.csproj" />
+    <ProjectReference Include="..\Finapp.Database\Finapp.Database.csproj" />
   </ItemGroup>
 
 </Project>
