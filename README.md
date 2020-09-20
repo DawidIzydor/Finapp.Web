@@ -15,6 +15,10 @@ A showdown service-based application for managing finances. This is the service 
 
 To use get the `Finapp.Client` application. It's in another repo
 
+# Finapp.Admin
+
+This is an admin application, you can add users with it 
+
 # ToDo
 1. Dockerize
 2. Make dockerhub get this to work
