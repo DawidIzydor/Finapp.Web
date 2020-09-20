@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Finapp.Authentication.Exception;
 using Finapp.Authentication.Models;
 using Finapp.Database;
-using Finapp.Dto;
 using Finapp.Dto.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
